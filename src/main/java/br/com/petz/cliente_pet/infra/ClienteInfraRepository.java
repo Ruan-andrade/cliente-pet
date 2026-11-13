@@ -8,6 +8,11 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Log4j2
 public class ClienteInfraRepository implements ClienteRepository {
+    private final ClienteSpringDataJPARepository clienteSpringDataJPARepository;
+
+    public ClienteInfraRepository(ClienteSpringDataJPARepository clienteSpringDataJPARepository) {
+        this.clienteSpringDataJPARepository = clienteSpringDataJPARepository;
+    }
 
     @Override
     public Cliente salva(Cliente cliente) {
