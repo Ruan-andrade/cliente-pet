@@ -16,11 +16,12 @@ public class ClienteApplicationService implements ClienteService {
 
     @Override
     public ClienteResponse criaCliente(ClienteRequest clienteRequest) {
-    log.info("[Inicia] ClienteApplicationService - criarCLiente");
-    Cliente cliente = clienteRepository.salva(new Cliente(clienteRequest));
-    log.info("[finaliza] ClienteApplicationService - criarCLiente");
+        log.info("[Inicia] ClienteApplicationService - criarCLiente");
+        Cliente cliente = clienteRepository.salva(new Cliente(clienteRequest));
+        log.info("[finaliza] ClienteApplicationService - criarCLiente");
         return ClienteResponse.builder().
                 idCliente(cliente
-                        .getIdCliente()).build();
+                        .getIdCliente())
+                .build();
     }
 }
