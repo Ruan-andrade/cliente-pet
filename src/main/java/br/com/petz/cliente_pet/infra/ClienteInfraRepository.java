@@ -5,6 +5,8 @@ import br.com.petz.cliente_pet.reposytory.ClienteRepository;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 @Log4j2
 public class ClienteInfraRepository implements ClienteRepository {
@@ -20,5 +22,13 @@ public class ClienteInfraRepository implements ClienteRepository {
         clienteSpringDataJPARepository.save(cliente);
         log.info("[finaliza] ClienteInfraRepository - salva");
         return cliente;
+    }
+
+    @Override
+    public List<Cliente> buscaTodosClientes() {
+        log.info("[inicia] ClienteInfraRepository - buscaTodosClientes");
+        List
+        log.info("[finaliza] ClienteInfraRepository - buscaTodosClientes");
+        return null;
     }
 }
