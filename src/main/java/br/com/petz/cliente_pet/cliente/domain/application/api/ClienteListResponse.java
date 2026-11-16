@@ -7,8 +7,6 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import static org.apache.commons.lang3.stream.LangCollectors.collect;
-
 
 @Value
 public class ClienteListResponse {
