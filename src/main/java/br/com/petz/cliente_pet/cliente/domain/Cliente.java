@@ -1,7 +1,7 @@
 package br.com.petz.cliente_pet.cliente.domain;
 
-import br.com.petz.cliente_pet.Sexo;
-import br.com.petz.cliente_pet.cliente.domain.application.ClienteRequest;
+import br.com.petz.cliente_pet.cliente.domain.Sexo;
+import br.com.petz.cliente_pet.cliente.application.api.ClienteRequest;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

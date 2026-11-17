@@ -1,9 +1,9 @@
-package br.com.petz.cliente_pet.service;
+package br.com.petz.cliente_pet.cliente.application.service;
 
-import br.com.petz.cliente_pet.cliente.domain.application.ClienteDetalhadoResponse;
-import br.com.petz.cliente_pet.cliente.domain.application.ClienteListResponse;
-import br.com.petz.cliente_pet.cliente.domain.application.ClienteRequest;
-import br.com.petz.cliente_pet.cliente.domain.application.ClienteResponse;
+import br.com.petz.cliente_pet.cliente.application.api.ClienteDetalhadoResponse;
+import br.com.petz.cliente_pet.cliente.application.api.ClienteListResponse;
+import br.com.petz.cliente_pet.cliente.application.api.ClienteRequest;
+import br.com.petz.cliente_pet.cliente.application.api.ClienteResponse;
 
 import java.util.List;
 import java.util.UUID;

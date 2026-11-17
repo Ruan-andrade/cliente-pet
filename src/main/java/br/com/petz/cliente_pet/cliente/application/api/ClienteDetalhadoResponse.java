@@ -1,6 +1,6 @@
-package br.com.petz.cliente_pet.cliente.domain.application;
+package br.com.petz.cliente_pet.cliente.application.api;
 
-import br.com.petz.cliente_pet.Sexo;
+import br.com.petz.cliente_pet.cliente.domain.Sexo;
 import br.com.petz.cliente_pet.cliente.domain.Cliente;
 import lombok.Value;
 

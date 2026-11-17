@@ -1,4 +1,4 @@
-package br.com.petz.cliente_pet.reposytory;
+package br.com.petz.cliente_pet.cliente.application.repository;
 
 import br.com.petz.cliente_pet.cliente.domain.Cliente;
 

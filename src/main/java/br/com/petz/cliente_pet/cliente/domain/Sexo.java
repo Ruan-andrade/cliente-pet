@@ -1,4 +1,4 @@
-package br.com.petz.cliente_pet;
+package br.com.petz.cliente_pet.cliente.domain;
 
 public enum Sexo {
     Feminino, Masculino;
