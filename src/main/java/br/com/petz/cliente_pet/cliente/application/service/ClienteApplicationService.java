@@ -1,10 +1,10 @@
 package br.com.petz.cliente_pet.service;
 
 import br.com.petz.cliente_pet.cliente.domain.Cliente;
-import br.com.petz.cliente_pet.cliente.domain.application.api.ClienteDetalhadoResponse;
-import br.com.petz.cliente_pet.cliente.domain.application.api.ClienteListResponse;
-import br.com.petz.cliente_pet.cliente.domain.application.api.ClienteRequest;
-import br.com.petz.cliente_pet.cliente.domain.application.api.ClienteResponse;
+import br.com.petz.cliente_pet.cliente.domain.application.ClienteDetalhadoResponse;
+import br.com.petz.cliente_pet.cliente.domain.application.ClienteListResponse;
+import br.com.petz.cliente_pet.cliente.domain.application.ClienteRequest;
+import br.com.petz.cliente_pet.cliente.domain.application.ClienteResponse;
 import br.com.petz.cliente_pet.reposytory.ClienteRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -41,7 +41,8 @@ public class ClienteApplicationService implements ClienteService {
     @Override
     public ClienteDetalhadoResponse buscaClienteAtravesId(UUID idCliente) {
         log.info("[Inicia] ClienteApplicationService - buscaTodosClientes");
+        Cliente cliente = clienteRepository.buscaClienteAtravesId(idCliente);
         log.info("[finaliza] ClienteApplicationService - buscaTodosClientes");
-        return null;
+        return new ClienteDetalhadoResponse(cliente);
     }
 }
