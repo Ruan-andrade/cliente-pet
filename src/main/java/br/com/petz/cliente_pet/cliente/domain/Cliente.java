@@ -1,6 +1,5 @@
 package br.com.petz.cliente_pet.cliente.domain;
 
-import br.com.petz.cliente_pet.cliente.domain.Sexo;
 import br.com.petz.cliente_pet.cliente.application.api.ClienteRequest;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -21,7 +20,7 @@ import java.util.UUID;
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", updatable = false, unique = true, nullable = false)
+    @Column (columnDefinition = "uuid", name = "idCliente", updatable = false, unique = true, nullable = false)
     private UUID idCliente;
     @NotBlank
     private String nomeCompleto;
